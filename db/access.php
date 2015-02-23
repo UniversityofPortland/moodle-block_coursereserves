@@ -1,7 +1,7 @@
 <?php
     $capabilities = array(
-        
-        'block/course_reserves:myaddinstance' => array(
+
+        'block/coursereserves:myaddinstance' => array(
             'captype' => 'write',
             'contextlevel' => CONTEXT_SYSTEM,
             'archetypes' => array(
@@ -10,17 +10,17 @@
 
             'clonepermissionsfrom' => 'moodle/my:manageblocks'
         ),
-        
-        'block/course_reserves:addinstance' => array(
+
+        'block/coursereserves:addinstance' => array(
             'riskbitmask' => RISK_SPAM | RISK_XSS,
-            
+
             'captype' => 'write',
             'contextlevel' => CONTEXT_BLOCK,
             'archetypes' => array(
                 'editingteacher' => CAP_ALLOW,
                 'manager' => CAP_ALLOW
             ),
-            
+
             'clonepermissionsfrom' => 'moodle/site:manageblocks'
         )
     );
